@@ -4,12 +4,10 @@ import config from '../../config';
 export default function Header() {
   return (
     <header id="header">
-      <h1>
-        We are launching very soon!
-      </h1>
-      <h2>Our website in under construction</h2>
+      <h1>{config.heading1}</h1>
+      <h2>{config.heading2}</h2>
       <br />
-      <p>{config.siteTitle} - Thought Leaders in Digital</p>
+      <p>{config.siteTitle}</p>
       <nav>
         <ul>
           {config.authorSocialLinks && config.authorSocialLinks.map(social => {
